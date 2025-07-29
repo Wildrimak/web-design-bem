@@ -54,3 +54,78 @@ O HTML5 permite incluir **áudio e vídeo diretamente no HTML**, sem necessidade
 ```html
 <video src="video.mp4" controls></video>
 <audio src="audio.mp3" controls></audio>
+```
+
+### 3. Novos tipos de input
+
+Formulários agora suportam novos tipos de entrada, melhorando a validação e a experiência do usuário:
+
+* `email`
+* `url`
+* `tel`
+* `date`, `time`, `datetime-local`
+* `range`, `color`
+* `search`
+
+Exemplo:
+
+```html
+<input type="email" required>
+<input type="range" min="0" max="100">
+```
+
+### 4. Elemento `<canvas>` para gráficos e jogos
+
+O `<canvas>` permite desenhar gráficos 2D via JavaScript, sendo muito usado para jogos, visualizações e editores de imagem.
+
+```html
+<canvas id="meuCanvas" width="300" height="150"></canvas>
+```
+
+### 5. Armazenamento local
+
+O HTML5 introduziu formas de **armazenar dados no navegador**, sem usar cookies:
+
+* `localStorage` — dados persistem mesmo após fechar o navegador
+* `sessionStorage` — dados válidos apenas durante a sessão atual
+
+Exemplo com JavaScript:
+
+```javascript
+localStorage.setItem('nome', 'João');
+let nome = localStorage.getItem('nome');
+```
+
+### 6. Novas APIs
+
+O HTML5 trouxe diversas APIs poderosas que permitem criar aplicações mais ricas e interativas:
+
+* **Geolocation API** — Acessa localização do usuário
+* **Drag and Drop API** — Arrastar e soltar elementos
+* **Web Storage API** — Armazenamento local
+* **WebSockets API** — Comunicação em tempo real
+* **Web Workers API** — Execução de scripts em segundo plano
+
+### 7. Compatibilidade com dispositivos móveis
+
+O HTML5 foi projetado com foco em **responsividade e adaptação**, facilitando o desenvolvimento para smartphones e tablets.
+
+### 8. Fim de elementos obsoletos
+
+O HTML5 removeu ou desaconselhou o uso de tags que misturam conteúdo com apresentação, como:
+
+* `<center>`
+* `<font>`
+* `<big>`, `<small>`
+* `<strike>`, `<u>`
+
+Esses estilos devem ser aplicados via CSS.
+
+---
+
+## Conclusão
+
+O HTML5 representa um grande avanço na forma como desenvolvemos para a web.
+Ele é mais **semântico**, **interativo** e **moderno**, refletindo as necessidades da web atual, onde o conteúdo deve ser acessível, adaptável e rico em funcionalidades — tudo isso sem depender de tecnologias externas.
+
+Com o HTML5, a web se torna uma verdadeira **plataforma de aplicações**, abrindo caminho para experiências cada vez mais completas e acessíveis diretamente do navegador.
